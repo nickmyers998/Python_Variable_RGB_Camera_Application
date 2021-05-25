@@ -205,7 +205,7 @@ class Window(QWidget):          #Application window
         #Called on color screenshot button click
         #Takes a screenshot of the current camera feed and constructs a new image from RGB boundries given by user
         t = cv.imwrite('color_screenshot.png',self.capture.read()[1])
-        image = cv.imread("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\color_screenshot.png")
+        image = cv.imread("             REPLACE WITH DESIRED FILE PATH FOR color_screenshot.png              ")
         hsv = cv.cvtColor(image, cv.COLOR_BGR2HSV)
         lower_range = np.array([self.rl,self.gl,self.bl])
         upper_range = np.array([self.ru,self.gu,self.bu])
@@ -217,10 +217,10 @@ class Window(QWidget):          #Application window
         #Saves most recent screenshot displayed on main window to user's home directory
         homeDir = os.path.expanduser("~")
         if self.flag == 0:
-            pic = Image.open("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\norm_screenshot.png")
+            pic = Image.open("          REPLACE WITH DESIRED FILE PATH FOR norm_screenshot.png")
             pic = pic.save(homeDir + "\\test.png")
         else:
-            pic = Image.open("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\color_screenshot.png")
+            pic = Image.open("          REPLACE WITH DESIRED FILE PATH FOR color_screenshot.png")
             pic = pic.save(homeDir + "\\test2.png")
 
 #Begin program
