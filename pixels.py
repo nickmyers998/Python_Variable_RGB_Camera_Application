@@ -9,7 +9,7 @@ def func():
 
     # This function finds high density color areas of a color-parsed image provided in camapp.py and focuses a gray box around the area of average density
 
-    img = cv.imread("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\color_screenshot.png", 1)   # Opens cv image
+    img = cv.imread("           REPLACE WITH DESIRED FILE PATH FOR color_screenshot.png", 1)   # Opens cv image
 
     count_all = int(img.size/3)                                 # Gets total pixels in image
     count_blk = int(np.sum(img < 255)/3)                        # Counts all black pixels
@@ -69,9 +69,9 @@ def func():
     l2_high = l_high - 8
     l2_low = l_low + 8
 
-    newim = Image.open("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\color_screenshot.png")       # Saves image and creates a new image for box generation
-    newim.save("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\imtest.png")
-    altim = Image.open("Z:\Engineering\\02-Users\\nmyers\Reports and Proposals\Hydraulic Press\Python\\imtest.png")
+    newim = Image.open("            REPLACE WITH DESIRED FILE PATH FOR color_screenshot.png")       # Saves image and creates a new image for box generation
+    newim.save("                    REPALCE WITH DESIRED FILE PATH FOR imtest.png")
+    altim = Image.open("            REPLACE WITH DESIRED FILE PATH FOR imtest.png")
     pixels = altim.load()
 
 
